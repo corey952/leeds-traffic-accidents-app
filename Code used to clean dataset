@@ -1,0 +1,14 @@
+import pandas as pd
+
+data = pd.read_csv('/content/Traffic%20accidents_2019_Leeds.csv')
+data.head(10)
+
+data.info()
+data.describe()
+data.describe(include='object')
+data.isnull().sum()
+
+data = data.drop(columns=(['Reference Number', 'Time (24hr)', '1st Road Class & No', 'Local Authority', 'Vehicle Number']))
+data.head(10)
+
+data.to_csv(r'/content/Leeds_Traffic_Accidents_2019.csv', index=False)
