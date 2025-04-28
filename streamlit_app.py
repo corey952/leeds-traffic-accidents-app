@@ -1,6 +1,10 @@
 import streamlit as st
+import pandas as pd
 
-st.title("🎈 My new app")
+st.title("Leeds Traffic Accidents")
 st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+    "Accidents"
 )
+
+df =  pd.read_csv("Traffic%20accidents_2019_Leeds.csv")
+st.write(df)
