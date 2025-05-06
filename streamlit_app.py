@@ -4,7 +4,7 @@ import pandas as pd
 
 # Setting page configuration
 st.set_page_config(
-    layout="wide",
+    layout = "wide",
     page_title = "Leeds Traffic Accidents"
 )
 
